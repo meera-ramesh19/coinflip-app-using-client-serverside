@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    fotn-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 2rem;
+    /*   background: grey;
+  border: 20px solid black; */
+    /*   margin: 0 auto; */
+}
+
+.wrapper {
+    width: 80%;
+    /*   margin: 0 auto;  */
+}
+
+h1 {
+    text-align: center;
+    padding: 1%;
+}
+
+.outline {
+    display: block;
+    padding: 5%;
+}
+
+.coin {
+    display: block;
+    background: background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100%;
+    transition: all 500ms linear;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.flip {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+.headCount,
+.tailCount,
+.flipSide {
+    display: inline-flex;
+    padding-top: 5%;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 20%;
+}
+
+#coin {}
+
+.animate-coin {
+    margin: 0 auto;
+    animation: flip 2s 1;
+}
+
+@keyframes flip {
+    0% {
+        transform: scale3d(1, 1, 1) rotateX(0deg);
+    }
+    50% {
+        transform: scale3d(1, 1, 1) rotateX(3600deg);
+    }
+    100% {
+        transform: scale3d(1, 1, 1) rotateX(7200deg);
+    }
+}
